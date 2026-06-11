@@ -1,5 +1,7 @@
 body {
     background-color: rgb(7, 8, 20);
+    font-family: "Space Mono";
+
 }
 
 .main-part{
@@ -19,11 +21,39 @@ body {
 
 .memory-box {
     width: 600px;
-    height: 300px;
+    height: 500px;
     background: rgb(255, 255, 255);
     border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .text-para {
-    font-family: "Space Mono";
+    padding: 40px 40px 25px 40px;
 }
+
+.gemini {
+    color: white;
+    font-size: 25px;
+    padding: 40px 0px 0px 458px;
+}
+
+.star {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0);
+  position: absolute;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.791);
+}
+.star:nth-child(1) { top: 28%; right: 62%; }
+.star:nth-child(2) { top: 37%; right: 74%; }
+.star:nth-child(3) { top: 37%; right: 50%; }
+.star:nth-child(4) { top: 65%; right: 45%; }
+.star:nth-child(5) { top: 54%; right: 26%; }
+.star:nth-child(6) { top: 81%; right: 25%; }
+.star:nth-child(7) { top: 70%; right: 16%; }
+.star:nth-child(8) { top: 64%; right: 11%; }
+.star:nth-child(9) { top: 65%; right: 3%; }
