@@ -1,7 +1,14 @@
 body {
     background-color: rgb(7, 8, 20);
     font-family: "Space Mono";
+}
 
+.memory {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 
 .main-part{
@@ -16,21 +23,9 @@ body {
     width: 600px;
     height: 600px;
     background: rgba(255, 255, 255, 0.377);
+    background-image: url("zodiacline.png");
+    background-size: cover;
     border-radius: 40px;
-}
-
-.memory-box {
-    width: 600px;
-    height: 500px;
-    background: rgb(255, 255, 255);
-    border-radius: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.text-para {
-    padding: 40px 40px 25px 40px;
 }
 
 .gemini {
@@ -46,14 +41,50 @@ body {
   border: 1px solid white;
   background: rgba(255, 255, 255, 0);
   position: absolute;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.791);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.791);
 }
-.star:nth-child(1) { top: 28%; right: 62%; }
-.star:nth-child(2) { top: 37%; right: 74%; }
-.star:nth-child(3) { top: 37%; right: 50%; }
-.star:nth-child(4) { top: 65%; right: 45%; }
-.star:nth-child(5) { top: 54%; right: 26%; }
-.star:nth-child(6) { top: 81%; right: 25%; }
-.star:nth-child(7) { top: 70%; right: 16%; }
-.star:nth-child(8) { top: 64%; right: 11%; }
-.star:nth-child(9) { top: 65%; right: 3%; }
+
+.star:nth-child(1) { top: 26%; right: 81%; }
+.star:nth-child(2) { top: 35%; right: 86%; }
+.star:nth-child(3) { top: 34%; right: 76%; }
+.star:nth-child(4) { top: 60%; right: 74%; }
+.star:nth-child(5) { top: 50%; right: 66%; }
+.star:nth-child(6) { top: 73%; right: 66%; }
+.star:nth-child(7) { top: 64%; right: 62%; }
+.star:nth-child(8) { top: 58%; right: 60%; }
+.star:nth-child(9) { top: 59%; right: 57%; }
+
+.memory-box {
+    width: 600px;
+    height: 500px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 40px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.color-box {
+    width: 600px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.symbol-box {
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 100%;
+    border: 1px solid white;
+    position: absolute;
+    right: 45%;
+    top: 8%;
+
+}
+.text-para {
+    padding: 40px 40px 25px 40px;
+    color: white;
+}
+
