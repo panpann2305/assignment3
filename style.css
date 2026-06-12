@@ -23,7 +23,7 @@ body {
     width: 600px;
     height: 600px;
     background: rgba(255, 255, 255, 0.377);
-    background-image: url("zodiacline.png");
+    background-image: url("zodiacline.PNG");
     background-size: cover;
     border-radius: 40px;
 }
@@ -35,13 +35,13 @@ body {
 }
 
 .star {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  border: 1px solid white;
-  background: rgba(255, 255, 255, 0);
-  position: absolute;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.791);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: rgba(255, 255, 255, 0);
+    position: absolute;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.791);
 }
 
 .star:nth-child(1) { top: 26%; right: 81%; }
@@ -67,12 +67,19 @@ body {
 
 .color-box {
     width: 600px;
-    height: 200px;
+    height: 170px;
     background: rgb(255, 255, 255);
     border-radius: 40px;
 }
 
 .symbol-box {
+    width: 600px;
+    height: 200px;
+    background: rgb(255, 255, 255);
+    border-radius: 40px;
+}
+
+.symbol-cir {
     width: 80px;
     height: 80px;
     background: rgba(255, 255, 255, 0);
@@ -84,7 +91,95 @@ body {
 
 }
 .text-para {
-    padding: 40px 40px 25px 40px;
+    padding: 50px 40px 25px 40px;
     color: white;
 }
 
+.color-title {
+    color: black;
+    padding: 30px 40px 25px 40px;
+}
+
+.symbol-title {
+    color: black;
+    padding: 30px 40px 25px 40px;
+}
+
+.color-palette {
+    display: flex;
+    gap: 30px;
+    padding: 10px 40px 0px 40px;
+}
+
+.color {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: grab;
+}
+
+.red { background: #ed5555; }
+.yellow { background: #FFD93D; }
+.green { background: #6BCB77; }
+.blue { background: #4a8ee6; }
+.purple { background: #9663d9; }
+.pink { background: #f58dc1; }
+
+.symbol-palette {
+    display: flex;
+    gap: 30px;
+    padding: 10px 40px 0px 40px;
+}
+
+.symbol {
+    cursor: grab;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    background: rgb(15, 15, 66);
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: rgb(15, 15, 66);
+    border-radius: 50%; 
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    border-left: 22px solid transparent;
+    border-right: 22px solid transparent;
+    border-bottom: 40px solid rgb(15, 15, 66);
+}
+
+.starr {
+  clip-path: polygon(
+    50% 0%,
+    61% 32%,
+    95% 32%,
+    68% 55%,
+    78% 90%,
+    50% 72%,
+    22% 90%,
+    32% 55%,
+    5% 32%,
+    39% 32%
+  );
+
+  width: 49px;
+  height: 49px;
+  background: rgb(15, 15, 66);
+  transform: translate(-7px, -5px);
+}
+
+.heart {
+    transform: translate(-17px, -5px);
+}
+
+.flower {
+    transform: translate(-29px, -5px);
+}
