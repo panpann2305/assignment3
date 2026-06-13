@@ -4,6 +4,8 @@ const symbols = document.querySelectorAll('.symbol');
 const symbolBox = document.querySelector(".symbol-cir");
 const coloreraser = document.querySelector(".color-title .eraser");
 const symboleraser = document.querySelector(".symbol-title .eraser");
+const stars = document.querySelectorAll(".star");
+const memoryPart = document.querySelector(".memory-part");
 
 colors.forEach(color => {
 
@@ -35,7 +37,7 @@ memoryBox.addEventListener("drop", (e) => {
 
     const color =
         e.dataTransfer.getData("color"); //Get the chosen color
-
+    if (!color) return;
     memoryBox.style.backgroundColor =
         color; //and change the color of the memoryBox to the chosen color
 
@@ -90,5 +92,37 @@ symboleraser.addEventListener("click", () => {
     symbolBox.innerHTML = "";
     symbolBox.style.backgroundColor = "";
     symbolBox.classList.remove("glow");
+
+});
+
+memoryPart.addEventListener("dragstart", (e) => {
+
+    e.dataTransfer.setData("memory", "memoryPart");
+
+});
+
+stars.forEach(star => {
+
+    star.addEventListener("dragover", (e) => {
+        e.preventDefault();
+    });
+
+});
+
+stars.forEach(star => {
+
+    star.addEventListener("drop", (e) => {
+
+        e.preventDefault();
+
+        const type = e.dataTransfer.getData("memory");
+
+        if (type !== "memoryBox") return;
+
+        star.innerHTML = "";
+
+        star.appendChild(memoryBox);
+
+    });
 
 });
