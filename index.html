@@ -40,11 +40,11 @@
         <div class="memory">
             <div class="memory-box">
                 <div class="text-para"> The afternoon before graduation, my friends and I sat on the grass outside campus, talking about our plans for the future. We stayed until the stars appeared, knowing that this might be one of the last times we were all together in the same place.</div>
-                <img src="memory.png" width="400px" height="auto" alt="Memory Image">
+                <img src="memory.png" width="270px" height="auto" alt="Memory Image">
             </div>
             <div class="color-box">
                 <div class="color-title"> Choose a color for your memory 
-                    <div class="eraser"> <img
+                    <div class="eraser"> <img draggable="false"
                         id="eraser-img"
                         src="icons8-erase-30.png"
                         alt="Eraser"
@@ -53,17 +53,17 @@
                     </div>
                 </div>
                 <div class="color-palette">    
-                    <div class="color red"></div>
-                    <div class="color yellow"></div>
-                    <div class="color green"></div>
-                    <div class="color blue"></div> 
-                    <div class="color purple"></div>
-                    <div class="color pink"></div>
+                    <div class="color red" draggable="true" data-color="#ed5555"></div>
+                    <div class="color yellow" draggable="true" data-color="#efc725"></div>
+                    <div class="color green" draggable="true" data-color="#6BCB77"></div>
+                    <div class="color blue" draggable="true" data-color="#4a8ee6"></div> 
+                    <div class="color purple" draggable="true" data-color="#9663d9"></div>
+                    <div class="color pink" draggable="true" data-color="#f58dc1"></div>
                 </div>           
             </div>
             <div class="symbol-box">
                 <div class="symbol-title"> Choose a symbol for your memory
-                    <div class="eraser"> <img
+                    <div class="eraser"> <img draggable="false"
                         id="eraser-img"
                         src="icons8-erase-30.png"
                         alt="Eraser"
@@ -72,13 +72,36 @@
                     </div>
                 </div>
                 <div class="symbol-palette">
-                    <div class="symbol circle"></div>
-                    <div class="symbol square"></div>
-                    <div class="symbol triangle"></div>
-                    <div class="symbol starr"></div>
-                    <svg class="symbol heart"
-                        width="51"
-                        height="51"
+                    <div class="symbol circle" draggable="true" data-symbol="circle">
+                    <svg>
+                        <circle cx="25" cy="25" fill="rgb(15, 15, 66)"/>
+                    </svg>
+                    </div>
+                    <div class="symbol square" draggable="true" data-symbol="square">
+                    <svg>
+                        <rect x="5" y="5" width="40" height="40" fill="rgb(15, 15, 66)"/>
+                    </svg>
+                    </div>
+                    <div class="symbol triangle" draggable="true" data-symbol="triangle">
+                    <svg>
+                        <polygon points="25,5 45,45 5,45" fill="rgb(15, 15, 66)"/>
+                    </svg>
+                    </div>
+                    <div class="symbol starr" draggable="true" data-symbol="starr">
+                    <svg
+                        viewBox="0 0 40 40">
+                        <path
+                            fill="rgb(15, 15, 66)"
+                            d="M12 17.27L18.18 21
+                            16.54 13.97 22 9.24
+                            14.81 8.63 12 2
+                            9.19 8.63 2 9.24
+                            7.46 13.97 5.82 21
+                            12 17.27Z"/>
+                    </svg>
+                    </div>
+                    <div class="symbol heart" draggable="true" data-symbol="heart">
+                    <svg
                         viewBox="0 0 24 24">
                         <path
                             fill="rgb(15, 15, 66)"
@@ -90,11 +113,10 @@
                             22 12.28 18.6 15.36 13.45 20.03
                             12 21.35Z"/>
                     </svg>
-                    <svg class="symbol flower"
-                        width="51"
-                        height="51"
+                    </div>
+                    <div class="symbol flower" draggable="true" data-symbol="flower">
+                    <svg class="symbol flower" data-symbol="flower"
                         viewBox="0 0 100 100">
-
                         <circle cx="50" cy="25" r="16" fill="rgb(15, 15, 66)"/>
                         <circle cx="73" cy="42" r="16" fill="rgb(15, 15, 66)"/>
                         <circle cx="64" cy="68" r="16" fill="rgb(15, 15, 66)"/>
@@ -102,6 +124,7 @@
                         <circle cx="27" cy="42" r="16" fill="rgb(15, 15, 66)"/>
                         <circle cx="55" cy="49" r="19" fill="rgb(15, 15, 66)"/>
                     </svg>
+                    </div>
                 </div>
             </div>
         </div>
