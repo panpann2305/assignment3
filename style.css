@@ -96,13 +96,23 @@ body {
 }
 
 .color-title {
-    color: black;
+    color: rgb(15, 15, 66);
     padding: 30px 40px 25px 40px;
 }
 
+.color-title .eraser {
+    position: absolute;
+    transform: translate(495px, -22px);
+}
+
 .symbol-title {
-    color: black;
+    color: rgb(15, 15, 66);
     padding: 30px 40px 25px 40px;
+}
+
+.symbol-title .eraser {
+    position: absolute;
+    transform: translate(495px, -22px);
 }
 
 .color-palette {
@@ -190,3 +200,7 @@ body {
     font-size: 25px;
     padding-bottom: 50px;
 }
+
+.eraser {
+    position: absolute;
+    transform: translate(535px, -px);}
