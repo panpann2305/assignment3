@@ -39,12 +39,16 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 400px;
+    user-select: none;
+
 }
 
 .gemini {
     color: white;
     font-size: 25px;
     padding: 40px 0px 0px 458px;
+    user-select: none;
+
 }
 
 .star {
@@ -114,11 +118,14 @@ body {
 .text-para {
     padding: 35px 40px 25px 40px;
     color: white;
+    user-select: none;
 }
 
 .color-title {
     color: rgb(15, 15, 66);
     padding: 30px 40px 25px 40px;
+    user-select: none;
+
 }
 
 .color-title .eraser {
@@ -129,6 +136,8 @@ body {
 .symbol-title {
     color: rgb(15, 15, 66);
     padding: 30px 40px 25px 40px;
+    user-select: none;
+
 }
 
 .symbol-title .eraser {

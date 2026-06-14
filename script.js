@@ -225,3 +225,42 @@ trashZone.addEventListener(
         draggedStar.style.boxShadow = "";
     }
 );
+
+document.addEventListener("DOMContentLoaded", () => {
+    const viewport = document.getElementById("viewport");
+    const canvas = document.getElementById("canvas");
+
+    let scale = 1;
+    let x = 0;
+    let y = 0;
+
+    let isDragging = false;
+    let startX = 0;
+    let startY = 0;
+
+    viewport.style.cursor = "grab";
+
+    viewport.addEventListener("pointerdown", (e) => {
+        isDragging = true;
+
+        startX = e.clientX - x;
+        startY = e.clientY - y;
+
+        viewport.setPointerCapture(e.pointerId);
+        viewport.style.cursor = "grabbing";
+    });
+
+    viewport.addEventListener("pointermove", (e) => {
+        if (!isDragging) return;
+
+        x = e.clientX - startX;
+        y = e.clientY - startY;
+
+        canvas.style.transform = `translate(${x}px, ${y}px) scale(${scale})`;
+    });
+
+    viewport.addEventListener("pointerup", () => {
+        isDragging = false;
+        viewport.style.cursor = "grab";
+    });
+});
