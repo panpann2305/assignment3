@@ -28,6 +28,19 @@ body {
     border-radius: 40px;
 }
 
+.trash-zone {
+    width: 200px;
+    height: 80px;
+    border: 1px white dashed;
+    border-radius: 25px;
+    color: white;
+    font-size: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 400px;
+}
+
 .gemini {
     color: white;
     font-size: 25px;
@@ -42,6 +55,9 @@ body {
     background: rgba(255, 255, 255, 0);
     position: absolute;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.791);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .star:nth-child(1) { top: 26%; right: 81%; }
